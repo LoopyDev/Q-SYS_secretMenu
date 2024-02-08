@@ -1,8 +1,6 @@
 -- Module object
 secretMenu = {}
 
--- Debug mode prevents the controls from becoming invisible
--- and shows the order in which they need to be pressed
 debug = false;
 -- Call this function in the UCI Script to make the controls visible
 function secretMenu.enableDebug()
@@ -24,7 +22,7 @@ end
 -- to be pressed (displayed only when debug == true), and 
 -- also for logic in the .createEventHandlers() function.
 index = 1;
-function secretMenu.addToggle(control) -- Call this function to....
+function secretMenu.addButton(control) -- Call this function to....
     control.Legend = tostring(index)
     index = index + 1;
     local newRow = {control, index}

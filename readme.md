@@ -2,8 +2,24 @@
 # Q_SYS_secretMenu
 
 ## Module Function
-This module allows you to create a secret menu, accessible directly from a UCI.
+A script for Q-SYS Designer which uses UCI control elements to create a (likely invisible) 'PIN pad', requiring the added controls to be pressed sequentially, within a certain amount of time.
 
+## Usage Instructions
+1. **Add controls to the UCI**
+   - In the 'UCI Layout' tab, add your trigger buttons. Name them appropriately (e.g. secretMenu_button_1...2...3...etc).
+2. **Initialise the Module**
+   - In the 'UCI Script' tab, declare a secretMenu instance:
+   ```lua 
+   secretMenu = require('Q-Sys_secretMenu')
+   ```
+3. **Add the buttons to the 'secretMenu' instance**
+   - In the 'UCI Script' tab, call the .addButton(control) function for each of your buttons, passing it their name:
+   ```lua
+   secretMenu.addButton(Controls.secretMenu_button_1)
+   secretMenu.addButton(Controls.secretMenu_button_2)
+   secretMenu.addButton(Controls.secretMenu_button_3)
+   ```
+   
 ## Setup Instructions
 
 1. **Move Module Directory**
