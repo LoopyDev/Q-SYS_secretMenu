@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "type": "LuaModule",
+  "author": "loopydev@outlook.com",
+  "description": "Using hidden buttons to bring up a secret menu via the UCI.",
+  "requiredVersion" : "9.5"
+}
