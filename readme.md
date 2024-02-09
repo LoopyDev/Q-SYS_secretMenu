@@ -13,7 +13,7 @@ A script for Q-SYS Designer which uses UCI control elements to create a (likely 
    secretMenu = require('Q-Sys_secretMenu')
    ```
 3. **Add the buttons to the 'secretMenu' instance**
-   - In the 'UCI Script' tab, call the .addButton(control) function for each of your buttons, passing it their name:
+   - In the 'UCI Script' tab, call the .addButton(control) function for each of your buttons, passing it their name. __The order in which you add them will be the order in which they need to be pressed.__
    ```lua
    secretMenu.addButton(Controls.secretMenu_button_1)
    secretMenu.addButton(Controls.secretMenu_button_2)
